@@ -27,9 +27,6 @@ body {
   background-color: #333;
 }
 
-.spiner-box {
-  position: relative;
-}
 
 @keyframes spin3D {
   from {
