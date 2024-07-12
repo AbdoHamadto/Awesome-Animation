@@ -1,0 +1,41 @@
+.leo-border-1 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: linear-gradient(#C6EBFB, #3984f5);
+  opacity: 0.8;
+  animation: spin3D 2.5s linear 0s infinite;
+}
+
+.leo-border-2 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  opacity: 0.8;
+  background: rgb(251, 91, 83);
+  background-image: linear-gradient(#ab54f3, #ea489b);
+  animation: spin3D 1.5s linear 0s infinite;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0px;
+  background-color: #333;
+}
+
+.spiner-box {
+  position: relative;
+}
+
+@keyframes spin3D {
+  from {
+    transform: rotate3d(0.5, 1, 0.5, 360deg);
+  }
+  to {
+    transform: rotate3d(0deg);
+  }
+}
